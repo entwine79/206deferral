@@ -34,19 +34,26 @@ public class nutrition : MonoBehaviour
         
         foreach (var trackedImage in args.added)
         {
-            Debug.Log(trackedImage.name);
-            if (trackedImage.name.Equals("VanillaFrosting"))
+            Debug.Log(trackedImage.referenceImage.name);
+            if (trackedImage.referenceImage.name == "VanillaFrosting")
             {
-                storedimage = trackedImage.name;
-            }
-        }
-
-        //SceneManager.LoadScene(5, LoadSceneMode.Single);
+                storedimage = trackedImage.referenceImage.name;
+                //trackedImagePrefab
+                 //SceneManager.LoadScene(5, LoadSceneMode.Single);
 
         LoaderUtility.Deinitialize();
         LoaderUtility.Initialize();
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(5);
+            }
+        }
+
+        //SceneManager.LoadScene(5, LoadSceneMode.Single);
+
+        //LoaderUtility.Deinitialize();
+        //LoaderUtility.Initialize();
+
+        //UnityEngine.SceneManagement.SceneManager.LoadScene(5);
 
     }
 }

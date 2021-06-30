@@ -20,7 +20,14 @@ public class dbnutrition : MonoBehaviour
 
     public void parseinfo()
     {
-        StartCoroutine(iteminfo());
+        if (nutrition.storedimage == "VanillaFrosting")
+        {
+                StartCoroutine(iteminfo());
+        }
+        else
+        {
+               itemname.text = nutrition.storedimage;
+        }
             /*StartCoroutine(energyinfo());
             StartCoroutine(fatinfo());
             StartCoroutine(saturdatesinfo());
@@ -33,7 +40,7 @@ public class dbnutrition : MonoBehaviour
 
     IEnumerator iteminfo()
     {
-        TESTER.text = imagename;
+        
        
             WWW www = new WWW("http://s875758124.websitehome.co.uk/php/itemname.php");
             yield return www;

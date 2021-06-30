@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 405
     height: 580
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -71,10 +71,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 880, y: 492}
-  m_MaxSize: {x: 16005, y: 14042}
+  m_MinSize: {x: 881, y: 492}
+  m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 122
+  controlID: 63
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 367
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -120,8 +120,8 @@ MonoBehaviour:
     y: 0
     width: 440
     height: 580
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -176,7 +176,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 16
+  controlID: 132
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 17
+  controlID: 133
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -298,8 +298,8 @@ MonoBehaviour:
     y: 0
     width: 708
     height: 580
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -351,14 +351,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\dpapa\OneDrive\Desktop\206CDE\206cde\206CDE
+  m_LastProjectPath: C:\Users\dpapa\Desktop\206deferral\206CDE
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6c3e0000
-    m_LastClickedID: 15980
-    m_ExpandedIDs: 00000000583e000000ca9a3b
+    m_SelectedIDs: 9c3f0000
+    m_LastClickedID: 16284
+    m_ExpandedIDs: 00000000923f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -386,7 +386,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000583e0000
+    m_ExpandedIDs: 00000000923f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -507,23 +507,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c80e0000
+      m_SelectedIDs: ea0e0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 3ed5ffff5cd5ffff42d6ffff56d6ffff72d6ffff7ed6ffff8cd6ffff98d6ffff4edfffff6cdfffff52e0ffff66e0ffff82e0ffff8ee0ffff9ce0ffffa8e0ffffd6e3fffff4e3fffff6e3fffffae3ffff14e4ffff1ee4ffff28e4ffff32e4ffff1ee5ffff3ce5ffff26e6ffff3ee6ffff5ee6ffff6ee6ffff80e6ffff90e6ffff96e7ffffb4e7ffff9ae8ffffaee8ffffcae8ffffd6e8ffffe4e8fffff0e8ffff50fbffff183e000034570000485c0000
+      m_ExpandedIDs: f0d9ffff0edafffff8dafffffcdaffff18dbffff24dbffff32dbffff4edbffff28dcffff46dcffff34ddffff3cddffff5cddffff6cddffff7eddffff9eddffff6edeffff8cdeffff7adfffff82dfffffa2dfffffb2dfffffc4dfffffe4dfffffc0e0ffffdee0ffffc8e1ffffcce1ffffe8e1fffff4e1ffff02e2ffff1ee2ffff00e3ffff1ee3ffff0ce4ffff14e4ffff34e4ffff44e4ffff56e4ffff76e4ffff5ee5ffff7ce5ffff66e6ffff6ae6ffff86e6ffff92e6ffffa0e6ffffbce6ffffbce7ffff58e8ffff76e8ffff64e9ffff7ce9ffff9ce9fffface9ffffbee9ffffc6e9ffffa2eaffffc0eaffffc2eaffffc6eaffffe0eaffffeaeafffff4eafffff8eaffff5cebffff7aebffff7cebffff80ebffff9aebffffa4ebffffaeebffffb2ebffffd8ecfffff6ecfffff8ecfffffcecffff16edffff20edffff2aedffff2eedffff8aedffffa8edffff92eeffffa6eeffffc2eeffffceeeffffdceeffffe0eeffff5cf0ffff86f1ffffa4f1ffffa6f1ffffaaf1ffffc4f1ffffcef1ffffd8f1ffffe2f1ffff20f3ffff3ef3ffff40f3ffff44f3ffff5ef3ffff68f3ffff72f3ffff7cf3ffffdaf3fffff8f3ffffe2f4fffffaf4ffff1af5ffff2af5ffff3cf5ffff4cf5ffff5af6ffff78f6ffff62f7ffff7af7ffff9af7ffffaaf7ffffbcf7ffffccf7ffffd2faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Directional Light
-        m_OriginalName: Directional Light
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 22250
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
