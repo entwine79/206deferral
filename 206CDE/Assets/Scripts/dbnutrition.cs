@@ -15,35 +15,46 @@ public class dbnutrition : MonoBehaviour
     public Text protein;
     public Text salt;
     public Text TESTER;
-    public static string imagename = nutrition.storedimage;
+    //public static string imagename = nutrition.storedimage;
+    string imagename = "VanillaFrostingsds4";
     public string[] info;
 
     public void parseinfo()
     {
-        if (nutrition.storedimage == "VanillaFrosting")
+        
+        /*if (nutrition.storedimage == "VanillaFrosting")
         {
                 StartCoroutine(iteminfo());
         }
         else
         {
                itemname.text = "Error";
-        }
-            /*StartCoroutine(energyinfo());
-            StartCoroutine(fatinfo());
-            StartCoroutine(saturdatesinfo());
-            StartCoroutine(carbsinfo());
-            StartCoroutine(sugarinfo());
-            StartCoroutine(proteininfo());
-            StartCoroutine(saltinfo());*/
-        
+        }*/
+        StartCoroutine(iteminfo());
     }
 
     IEnumerator iteminfo()
     {
         
        
-            WWW www = new WWW("http://s875758124.websitehome.co.uk/php/itemname.php");
+            WWWForm form = new WWWForm();
+            form.AddField("itemname", imagename);
+
+            WWW www = new WWW("http://s875758124.websitehome.co.uk/php/itemname.php", form);
             yield return www;
+            if (www.text == "0")
+            {
+                itemname.text = "Invalid Item.";
+                energy.text = null;
+                fat.text = null;
+                saturates.text = null;
+                carbohydrates.text = null;
+                sugar.text = null;
+                protein.text = null;
+                salt.text = null;
+            }
+            else
+            {
             string infolist = www.text;
             print(infolist);
             info = infolist.Split('|');
@@ -58,6 +69,7 @@ public class dbnutrition : MonoBehaviour
             for (int i = 0; i < info.Length; i++)
             {
                 Debug.Log(info[i]);
+            }
             }
         
     }
