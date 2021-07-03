@@ -26,7 +26,7 @@ public class dbnutrition : MonoBehaviour
         }
         else
         {
-               itemname.text = nutrition.storedimage;
+               itemname.text = "Error";
         }
             /*StartCoroutine(energyinfo());
             StartCoroutine(fatinfo());
@@ -47,9 +47,9 @@ public class dbnutrition : MonoBehaviour
             string infolist = www.text;
             print(infolist);
             info = infolist.Split('|');
-            fat.text = info[2];
             itemname.text = info[0];
             energy.text = info[1];
+            fat.text = info[2];
             saturates.text = info[3];
             carbohydrates.text = info[4];
             sugar.text = info[5];
