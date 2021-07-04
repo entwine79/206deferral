@@ -9,7 +9,6 @@ using UnityEngine.UI;
 
 public class nutrition : MonoBehaviour
 {
-    public static string storedimage;
 
     private ARTrackedImageManager _aRTrackedImageManager;
 
@@ -34,19 +33,22 @@ public class nutrition : MonoBehaviour
         
         foreach (var trackedImage in args.added)
         {
-            Debug.Log(trackedImage.referenceImage.name);
             if (trackedImage.referenceImage.name == "VanillaFrosting")
             {
-                storedimage = trackedImage.referenceImage.name;
-                //trackedImagePrefab
-                 //SceneManager.LoadScene(5, LoadSceneMode.Single);
+                current.barcode = "VanillaFrosting";
+            }
+            
+            if (trackedImage.referenceImage.name == "CokeCan")
+            {
+                current.barcode = "CokeCan";
+            }
+
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene(5);
+        }
 
         LoaderUtility.Deinitialize();
         LoaderUtility.Initialize();
-
-        UnityEngine.SceneManagement.SceneManager.LoadScene(5);
-            }
-        }
 
         //SceneManager.LoadScene(5, LoadSceneMode.Single);
 

@@ -14,9 +14,8 @@ public class dbnutrition : MonoBehaviour
     public Text sugar;
     public Text protein;
     public Text salt;
-    public Text TESTER;
-    //public static string imagename = nutrition.storedimage;
-    string imagename = "VanillaFrostingsds4";
+    //private static string imagename = nutrition.Storedimage;
+    //string imagename = "CokeCan";
     public string[] info;
 
     public void parseinfo()
@@ -38,7 +37,7 @@ public class dbnutrition : MonoBehaviour
         
        
             WWWForm form = new WWWForm();
-            form.AddField("itemname", imagename);
+            form.AddField("itemname", current.barcode);
 
             WWW www = new WWW("http://s875758124.websitehome.co.uk/php/itemname.php", form);
             yield return www;
@@ -73,7 +72,6 @@ public class dbnutrition : MonoBehaviour
             }
         
     }
-
 
 
 

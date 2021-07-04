@@ -14,3 +14,9 @@ public static class DBManager
         username = null;
     }
 }
+
+public class current
+{
+    public static string barcode;
+
+}

@@ -25,3 +25,13 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: VanillaFrosting
     m_Texture: {fileID: 2800000, guid: 95f09b5baa4ed9f4bbdd37f9a08535bc, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4878030065479956080
+      m_GuidHigh: 8314947214627529869
+    m_SerializedTextureGuid:
+      m_GuidLow: 11066678383087204176
+      m_GuidHigh: 10975839634523157915
+    m_Size: {x: 0.17761989, y: 0.11847108}
+    m_SpecifySize: 1
+    m_Name: CokeCan
+    m_Texture: {fileID: 2800000, guid: 0b683750bd5b99949bf567bffe035298, type: 3}

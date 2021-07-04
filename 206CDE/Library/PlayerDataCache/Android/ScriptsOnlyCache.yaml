@@ -140,6 +140,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2718}
     - Class: 114
       Script: {instanceID: 2814}
+    - Class: 114
+      Script: {instanceID: 3368}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -197,6 +199,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2814}
     - Class: 114
       Script: {instanceID: 2954}
+    - Class: 114
+      Script: {instanceID: 3368}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -316,17 +320,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -993,7 +989,7 @@ ScriptsOnlyBuild:
     className: AccessCam
   - hash:
       serializedVersion: 2
-      Hash: 1595aa268222c7640783882765ca246f
+      Hash: 634abd0876b0f7d0b1cf597f8006486d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: dbnutrition
