@@ -10,52 +10,35 @@ using UnityEngine.UI;
 public class nutrition : MonoBehaviour
 {
 
-    private ARTrackedImageManager _aRTrackedImageManager;
+    private ARTrackedImageManager imagemanager;
 
     private void Awake()
     {
-        _aRTrackedImageManager = FindObjectOfType<ARTrackedImageManager>();
+        imagemanager = FindObjectOfType<ARTrackedImageManager>();
     }
 
     public void OnEnable()
     {
-        _aRTrackedImageManager.trackedImagesChanged += OnImageChanged;
+        imagemanager.trackedImagesChanged += OnImageChanged;
     }
 
     public void OnDisable()
     {
-        _aRTrackedImageManager.trackedImagesChanged -= OnImageChanged;
+        imagemanager.trackedImagesChanged -= OnImageChanged;
     }
 
    
-    public void OnImageChanged(ARTrackedImagesChangedEventArgs args)
+    public void OnImageChanged(ARTrackedImagesChangedEventArgs images)
     {
         
-        foreach (var trackedImage in args.added)
+        foreach (var trackedImage in images.added)
         {
-            if (trackedImage.referenceImage.name == "VanillaFrosting")
-            {
-                current.barcode = "VanillaFrosting";
-            }
-            
-            if (trackedImage.referenceImage.name == "CokeCan")
-            {
-                current.barcode = "CokeCan";
-            }
-
-
-        UnityEngine.SceneManagement.SceneManager.LoadScene(5);
+            current.barcode = trackedImage.referenceImage.name;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(5);
         }
 
         LoaderUtility.Deinitialize();
         LoaderUtility.Initialize();
-
-        //SceneManager.LoadScene(5, LoadSceneMode.Single);
-
-        //LoaderUtility.Deinitialize();
-        //LoaderUtility.Initialize();
-
-        //UnityEngine.SceneManagement.SceneManager.LoadScene(5);
 
     }
 }

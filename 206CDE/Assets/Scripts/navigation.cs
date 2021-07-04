@@ -22,3 +22,5 @@ public class navigation : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }*/
 }
+
+
